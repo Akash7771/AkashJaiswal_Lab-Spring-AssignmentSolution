@@ -44,7 +44,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 				.antMatchers("/updateStudent", "/deleteStudent").hasAuthority("ADMIN")
 				.anyRequest()
 				.authenticated().and().formLogin()
-				.loginProcessingUrl("/").successForwardUrl("/")
+				.loginProcessingUrl("/login").successForwardUrl("/")
 				.permitAll().and().logout().logoutSuccessUrl("/login").permitAll()
 				.and()
 				.exceptionHandling().accessDeniedPage("/403")
