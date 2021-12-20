@@ -22,6 +22,9 @@
 	<nav class="navbar navbar-light bg-navbar-color">
       <div class="container-fluid">
         <span class="navbar-brand mb-0 h1"><h3 class="navbar-heading-text">Student Debate Registration</h3></span>        
+        <form class="d-flex">
+            <a href="/logout" >logout</a>
+        </form>
       </div>
     </nav>
     <br>
